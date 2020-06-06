@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingDetailFragment">
+
+    <TextView
+        android:id="@+id/item_detail_id"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+
+        android:layout_marginRight="32dp"
+
+        android:background="?android:attr/listDivider"
+        android:requiresFadingEdge="horizontal" />
+
+    <TextView
+        android:id="@+id/item_detail_long_desc"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:padding="16dp"
+        app:autoSizeTextType="uniform" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                app:cardBackgroundColor="#BF000000">
+
+                <ImageView
+                    android:id="@+id/parking_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_local_parking_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/item_detail_prereqs"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="16dp"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                app:cardBackgroundColor="#BF000000">
+
+                <ImageView
+                    android:id="@+id/accessible_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_accessible_forward_24" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/item_detail_short_desc"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="16dp"
+
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        android:requiresFadingEdge="horizontal" />
+
+    <TextView
+        android:id="@+id/update_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Update Lot Availability"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
+
+</LinearLayout>

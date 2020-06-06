@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        tools:context=".ParkingListActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include layout="@layout/item_list" />
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+        </ListView>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom|end"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        app:srcCompat="@android:drawable/ic_input_add" />-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:background="#ffffff"
+            android:id="@+id/map_container">
+<!--            <include layout="@layout/fragment_parking_map" />-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/request_lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:tint="#800080"
+                app:backgroundTint="#FFFFFF"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+
+            <com.google.android.gms.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/user_list_map" />
+        </RelativeLayout>
+    </LinearLayout>
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingAddFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="casual"
+        android:lineSpacingExtra="8sp"
+        android:text="UPark"
+        android:textColor="#131212"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/add_course_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_course_id_hint" />
+
+    <EditText
+        android:id="@+id/add_course_short_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_course_short_desc_hint" />
+
+    <EditText
+        android:id="@+id/add_course_long_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_course_long_desc_hint" />
+
+    <EditText
+        android:id="@+id/add_course_prereqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_course_prereqs_hint" />
+    <Button
+        android:id="@+id/btn_add_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="#FFFFFF"
+        android:text="@string/btn_add_course" />
+
+</LinearLayout>
