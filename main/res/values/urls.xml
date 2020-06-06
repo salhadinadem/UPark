@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_courses">https://team1-services-backend.herokuapp.com/sql/courses</string>
+    <string name="add_course">https://team1-services-backend.herokuapp.com/sql/addcourse</string>
+    <string name="update_course">https://team1-services-backend.herokuapp.com/sql/updatecourse</string>
+    <string name="register_course">https://team1-services-backend.herokuapp.com/register</string>
+    <string name="login">https://team1-services-backend.herokuapp.com/login</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UPark</string>
+    <string name="title_item_detail">Item Detail</string>
+
+
+    <!-- Add Course Fragment hints -->
+    <string name="enter_course_id_hint">Enter Course ID</string>
+    <string name="enter_course_short_desc_hint">Enter Course Title</string>
+    <string name="enter_course_long_desc_hint">Enter Course Description</string>
+    <string name="enter_course_prereqs_hint">Enter Course Prereqs</string>
+    <string name="enter_your_email_hint">Enter your email</string>
+    <string name="enter_your_password_hint">Enter your password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="LOGIN_PREFS">edu.tacoma.uw.datalab.PREFS</string>
+    <string name="LOGGEDIN">loggedin</string>
+    <string name="btn_add_course">Add Course</string>
+    <string name="action_logout">Sign Out</string>
+    <string name="btn_create_acc">Create Account</string>
+    <string name="btn_register">Register</string>
+
+</resources>
